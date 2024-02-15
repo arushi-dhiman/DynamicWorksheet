@@ -1,0 +1,244 @@
+{
+  "TemplateId": 4,
+  "TemplateName": "Template_4",
+  "Tabs": [
+    {
+      "TabId": 7,
+      "TabName": "Patient Info",
+      "FormData": [
+        {
+          "FormId": 12,
+          "FormName": "Personal Details",
+          "FormHeading": "Personal Details",
+          "Fields": [
+            {
+              "FieldId": 39,
+              "Id": 39,
+              "FieldName": "Patient Name",
+              "FieldType": "Text",
+              "FormId": 12,
+              "Label": "Patient Name",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 40,
+              "Id": 40,
+              "FieldName": "Age",
+              "FieldType": "Number",
+              "FormId": 12,
+              "Label": "Age",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 41,
+              "Id": 41,
+              "FieldName": "Gender",
+              "FieldType": "Radio",
+              "FormId": 12,
+              "Label": "Gender",
+              "Placeholder": "Choose one option",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 86,
+                  "Value": "Male",
+                  "FindingId": 4
+                },
+                {
+                  "Id": 87,
+                  "Value": "Female",
+                  "FindingId": 4
+                },
+                {
+                  "Id": 88,
+                  "Value": "Other",
+                  "FindingId": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TabId": 8,
+      "TabName": "Medical History",
+      "FormData": [
+        {
+          "FormId": 13,
+          "FormName": "Previous Surgeries",
+          "FormHeading": "Previous Surgeries",
+          "Fields": [
+            {
+              "FieldId": 42,
+              "Id": 42,
+              "FieldName": "Surgery Type",
+              "FieldType": "Text",
+              "FormId": 13,
+              "Label": "Surgery Type",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 43,
+              "Id": 43,
+              "FieldName": "Surgery Date",
+              "FieldType": "Date",
+              "FormId": 13,
+              "Label": "Surgery Date",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 44,
+              "Id": 44,
+              "FieldName": "Surgery Time",
+              "FieldType": "Time",
+              "FormId": 13,
+              "Label": "Surgery Time",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 45,
+              "Id": 45,
+              "FieldName": "Surgery Report",
+              "FieldType": "Text",
+              "FormId": 13,
+              "Label": "Surgery Report",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "FormId": 14,
+          "FormName": "Allergies",
+          "FormHeading": "Allergies",
+          "Fields": [
+            {
+              "FieldId": 46,
+              "Id": 46,
+              "FieldName": "Allergy Type",
+              "FieldType": "DropDown",
+              "FormId": 14,
+              "Label": "Allergy Type",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 89,
+                  "Value": "Pet Allergy",
+                  "FindingId": 14
+                },
+                {
+                  "Id": 90,
+                  "Value": "Pollen Allergy",
+                  "FindingId": 14
+                },
+                {
+                  "Id": 91,
+                  "Value": "Food Allergy",
+                  "FindingId": 14
+                },
+                {
+                  "Id": 92,
+                  "Value": "Dust Mite Allergy",
+                  "FindingId": 14
+                },
+                {
+                  "Id": 93,
+                  "Value": "Insect Sting Allergy",
+                  "FindingId": 14
+                }
+              ]
+            },
+            {
+              "FieldId": 47,
+              "Id": 47,
+              "FieldName": "Severity",
+              "FieldType": "DropDown",
+              "FormId": 14,
+              "Label": "Severity",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 94,
+                  "Value": "Mild",
+                  "FindingId": 16
+                },
+                {
+                  "Id": 95,
+                  "Value": "Moderate",
+                  "FindingId": 16
+                },
+                {
+                  "Id": 96,
+                  "Value": "Severe",
+                  "FindingId": 16
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/DynamicRepository/bin/Debug/net7.0
+/.vs
+/DynamicRepository/obj
+/DynamicServices/bin/Debug/net7.0
+/DynamicServices/obj
+/DynamicWorksheet/ClientApp/.angular/cache/15.2.7

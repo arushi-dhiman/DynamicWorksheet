@@ -1,0 +1,112 @@
+{
+    "Findings": [
+      {
+        "FindingId": 1,
+        "FindingOrder": 1,
+        "FindingName": "Cancer Type",
+        "Statement": "Lung cancer. Left ventricle cavity is normal in size Left ventricle cavity is normal in size Left ventricle cavity is normal in size"
+      },
+      {
+        "FindingId": 2,
+        "FindingOrder": 2,
+        "FindingName": "Severity of Cancer",
+        "Statement": "Cancer severity is moderately low"
+      },
+      {
+        "FindingId": 3,
+        "FindingOrder": 3,
+        "FindingName": "Age",
+        "Statement": "Age of the patient"
+      },
+      {
+        "FindingId": 4,
+        "FindingOrder": 4,
+        "FindingName": "Gender",
+        "Statement": "Gender of the pateint"
+      },
+      {
+        "FindingId": 5,
+        "FindingOrder": 5,
+        "FindingName": "Left ventricle",
+        "Statement": "Left ventricle cavity is normal in size"
+      },
+      {
+        "FindingId": 6,
+        "FindingOrder": 6,
+        "FindingName": "CancerStage",
+        "Statement": "Left ventricle cavity is normal in size Left ventricle cavity is normal in size Left ventricle cavity is normal in size"
+      },
+      {
+        "FindingId": 7,
+        "FindingOrder": 7,
+        "FindingName": "Tumor",
+        "Statement": "Tumor sizes vary from 1mm to 50mm"
+      },
+      {
+        "FindingId": 8,
+        "FindingOrder": 8,
+        "FindingName": "Blood Results",
+        "Statement": "Elevated Liver Enzymes and Low Red Blood Count"
+      },
+      {
+        "FindingId": 9,
+        "FindingOrder": 9,
+        "FindingName": "Dosage",
+        "Statement": " The amount of a medicine you should take over a period of time. Dosages is of high liquid type"
+      },
+      {
+        "FindingId": 10,
+        "FindingOrder": 10,
+        "FindingName": "Meds Time",
+        "Statement": "Medicines can treat diseases and improve your health.To reduce the risk of reactions and make sure that you get better, it is important for you to take your medicines correctly."
+      },
+      {
+        "FindingId": 11,
+        "FindingOrder": 11,
+        "FindingName": "Right Atrium",
+        "Statement": "One of the four chambers of the heart. The right atrium receives blood low in oxygen from the body and then empties the blood into the right ventricle"
+      },
+      {
+        "FindingId": 12,
+        "FindingOrder": 12,
+        "FindingName": "Right Atrium morphological",
+        "Statement": "The morphological right atrium is defined by the presence of a broad-based triangular appendage, unlike that of the left atrium, which is long and narrow-based."
+      },
+      {
+        "FindingId": 13,
+        "FindingOrder": 13,
+        "FindingName": "Right Atrium Shape",
+        "Statement": "Increased pressure within the right atrium during systole closes the valve, preventing the backflow of blood into the vena cavae. The right atrium is funnel-shaped as it leads to the right atrioventricular (AV) orifice."
+      },
+      {
+        "FindingId": 14,
+        "FindingOrder": 14,
+        "FindingName": "Right Atrium Structure",
+        "Statement": "The right atrium (RA) occupies the cranial heart base and, like the LA, consists of a large, cavernous chamber and a small, muscular appendage known as the right auricle, which projects cranially and to the left."
+      },
+      {
+        "FindingId": 15,
+        "FindingOrder": 15,
+        "FindingName": "Right Atrium Size",
+        "Statement": "The lower and upper limits of reference values for the right atrium are as follows: major dimension: 3.4-5.3 cm. minor dimension: 2.6-4.4 cm. end-systolic area: 10-18 cm."
+      },
+      {
+        "FindingId": 16,
+        "FindingOrder": 16,
+        "FindingName": "Right Atrium Function",
+        "Statement": "The right atrium receives oxygen-poor blood from the body and pumps it to the right ventricle"
+      },
+      {
+        "FindingId": 17,
+        "FindingOrder": 17,
+        "FindingName": "Atria",
+        "Statement": "(1) a reservoir or conduit for blood returning from the vena cava and the pulmonary veins and (2) a contractile chamber that augments ventricular filling, similar to a supercharger on an internal combustion engine."
+      },
+      {
+        "FindingId": 18,
+        "FindingOrder": 18,
+        "FindingName": "Thrombus",
+        "Statement": "A blood clot that forms inside one of your veins or arteries is called a thrombus. A thrombus may also form in your heart."
+      }
+    ]
+  }

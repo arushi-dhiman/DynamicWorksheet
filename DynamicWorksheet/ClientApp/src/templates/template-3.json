@@ -1,0 +1,487 @@
+{
+  "TemplateId": 3,
+  "TemplateName": "Template_3",
+  "Tabs": [
+    {
+      "TabId": 4,
+      "TabName": "Cancer Data",
+      "FormData": [
+        {
+          "FormId": 8,
+          "FormName": "Cancer Details",
+          "FormHeading": "Cancer Details",
+          "Fields": [
+            {
+              "FieldId": 24,
+              "Id": 24,
+              "FieldName": "Type of Cancer",
+              "FieldType": "DropDown",
+              "FormId": 8,
+              "Label": "Type of Cancer",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 53,
+                  "Value": "Breast Cancer",
+                  "FindingId": 1
+                },
+                {
+                  "Id": 54,
+                  "Value": "Blood Cancer",
+                  "FindingId": 1
+                },
+                {
+                  "Id": 55,
+                  "Value": "Lung Cancer",
+                  "FindingId": 1
+                },
+                {
+                  "Id": 56,
+                  "Value": "Colon Cancer",
+                  "FindingId": 1
+                }
+              ]
+            },
+            {
+              "FieldId": 25,
+              "Id": 25,
+              "FieldName": "Diagnosis Date",
+              "FieldType": "Date",
+              "FormId": 8,
+              "Label": "Diagnosis Date",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 26,
+              "Id": 26,
+              "FieldName": "Diagnosis Time",
+              "FieldType": "Time",
+              "FormId": 8,
+              "Label": "Diagnosis Time",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 27,
+              "Id": 27,
+              "FieldName": "Treatment",
+              "FieldType": "Text",
+              "FormId": 8,
+              "Label": "Treatment",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 28,
+              "Id": 28,
+              "FieldName": "Age",
+              "FieldType": "Number",
+              "FormId": 8,
+              "Label": "Age",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 29,
+              "Id": 29,
+              "FieldName": "Gender",
+              "FieldType": "Radio",
+              "FormId": 8,
+              "Label": "Gender",
+              "Placeholder": "Choose one option",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 57,
+                  "Value": "Male",
+                  "FindingId": 4
+                },
+                {
+                  "Id": 58,
+                  "Value": "Female",
+                  "FindingId": 4
+                },
+                {
+                  "Id": 59,
+                  "Value": "Other",
+                  "FindingId": 4
+                }
+              ]
+            },
+            {
+              "FieldId": 30,
+              "Id": 30,
+              "FieldName": "LVSV",
+              "FieldType": "Checkbox",
+              "FormId": 8,
+              "Label": "LVSV",
+              "Placeholder": "Tick the box",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 60,
+                  "Value": "true",
+                  "FindingId": 6
+                }
+              ]
+            }
+          ],
+          "ImagePreview": [
+            {
+              "Id": 1,
+              "ImageName": "Image_1",
+              "ImageLink": "https://cdn.pixabay.com/photo/2016/01/08/22/36/cervical-spine-1129431_1280.jpg"
+            },
+            {
+              "Id": 2,
+              "ImageName": "Image_2",
+              "ImageLink": "https://cdn.pixabay.com/photo/2017/09/19/10/30/xray-x-ray-2764828_960_720.jpg"
+            }
+          ]
+        },
+        {
+          "FormId": 9,
+          "FormName": "Cancer Stage",
+          "FormHeading": "Cancer Stage",
+          "Fields": [
+            {
+              "FieldId": 31,
+              "Id": 31,
+              "FieldName": "Cancer Stage",
+              "FieldType": "DropDown",
+              "FormId": 9,
+              "Label": "Cancer Stage",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 61,
+                  "Value": "1st",
+                  "FindingId": 11
+                },
+                {
+                  "Id": 62,
+                  "Value": "2nd",
+                  "FindingId": 11
+                },
+                {
+                  "Id": 63,
+                  "Value": "3rd",
+                  "FindingId": 11
+                },
+                {
+                  "Id": 64,
+                  "Value": "4th",
+                  "FindingId": 11
+                }
+              ]
+            },
+            {
+              "FieldId": 32,
+              "Id": 32,
+              "FieldName": "Tumor Size",
+              "FieldType": "DropDown",
+              "FormId": 9,
+              "Label": "Tumor Size",
+              "PostFix": "mm",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 65,
+                  "Value": "1mm",
+                  "FindingId": 7
+                },
+                {
+                  "Id": 66,
+                  "Value": "2mm",
+                  "FindingId": 7
+                },
+                {
+                  "Id": 67,
+                  "Value": "5mm",
+                  "FindingId": 7
+                },
+                {
+                  "Id": 68,
+                  "Value": "10mm",
+                  "FindingId": 7
+                },
+                {
+                  "Id": 69,
+                  "Value": "50mm",
+                  "FindingId": 7
+                }
+              ]
+            },
+            {
+              "FieldId": 33,
+              "Id": 33,
+              "FieldName": "Blood Test Results",
+              "FieldType": "DropDown",
+              "FormId": 9,
+              "Label": "Blood Test Results",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 70,
+                  "Value": "Normal",
+                  "FindingId": 13
+                },
+                {
+                  "Id": 71,
+                  "Value": "Abnormal",
+                  "FindingId": 13
+                },
+                {
+                  "Id": 72,
+                  "Value": "High WBCC",
+                  "FindingId": 13
+                },
+                {
+                  "Id": 73,
+                  "Value": "Low RBCC",
+                  "FindingId": 13
+                },
+                {
+                  "Id": 74,
+                  "Value": "Elevated Liver Enzymes",
+                  "FindingId": 13
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TabId": 5,
+      "TabName": "Medication",
+      "FormData": [
+        {
+          "FormId": 10,
+          "FormName": "Medication Details",
+          "FormHeading": "Medication Details",
+          "Fields": [
+            {
+              "FieldId": 34,
+              "Id": 34,
+              "FieldName": "Medication Name",
+              "FieldType": "Text",
+              "FormId": 10,
+              "Label": "Medication Name",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 35,
+              "Id": 35,
+              "FieldName": "Dosage",
+              "FieldType": "DropDown",
+              "FormId": 10,
+              "Label": "Dosage",
+              "PostFix": "%",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 75,
+                  "Value": "Solid",
+                  "FindingId": 12
+                },
+                {
+                  "Id": 76,
+                  "Value": "Liquid",
+                  "FindingId": 12
+                },
+                {
+                  "Id": 77,
+                  "Value": "Parental",
+                  "FindingId": 12
+                },
+                {
+                  "Id": 78,
+                  "Value": "Low",
+                  "FindingId": 12
+                },
+                {
+                  "Id": 79,
+                  "Value": "Moderate",
+                  "FindingId": 12
+                },
+                {
+                  "Id": 80,
+                  "Value": "High",
+                  "FindingId": 12
+                }
+              ]
+            },
+            {
+              "FieldId": 36,
+              "Id": 36,
+              "FieldName": "Medication Time",
+              "FieldType": "DropDown",
+              "FormId": 10,
+              "Label": "Medication Time",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 81,
+                  "Value": "Before Breakfast",
+                  "FindingId": 10
+                },
+                {
+                  "Id": 82,
+                  "Value": "After Breakfast",
+                  "FindingId": 10
+                },
+                {
+                  "Id": 83,
+                  "Value": "After Lunch",
+                  "FindingId": 10
+                },
+                {
+                  "Id": 84,
+                  "Value": "Empty Stomach",
+                  "FindingId": 10
+                },
+                {
+                  "Id": 85,
+                  "Value": "After Dinner",
+                  "FindingId": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TabId": 6,
+      "TabName": "Follow Up",
+      "FormData": [
+        {
+          "FormId": 11,
+          "FormName": "Follow-up Details",
+          "FormHeading": "Follow-up Details",
+          "Fields": [
+            {
+              "FieldId": 37,
+              "Id": 37,
+              "FieldName": "Follow-up Date",
+              "FieldType": "Date",
+              "FormId": 11,
+              "Label": "Follow-up Date",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 38,
+              "Id": 38,
+              "FieldName": "Notes",
+              "FieldType": "Text",
+              "FormId": 11,
+              "Label": "Notes",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

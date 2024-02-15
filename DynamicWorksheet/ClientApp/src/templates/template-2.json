@@ -1,0 +1,184 @@
+{
+  "TemplateId": 2,
+  "TemplateName": "Template_2",
+  "Tabs": [
+    {
+      "TabId": 3,
+      "TabName": "Thrombus",
+      "FormData": [
+        {
+          "FormId": 6,
+          "FormName": "LV Thrombus",
+          "FormHeading": "LV Thrombus",
+          "Fields": [
+            {
+              "FieldId": 19,
+              "Id": 19,
+              "FieldName": "Thrombus",
+              "FieldType": "DropDown",
+              "FormId": 6,
+              "Label": "Thrombus",
+              "PostFix": "%",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 39,
+                  "Value": " Constriction of the blood vessel",
+                  "FindingId": 6
+                },
+                {
+                  "Id": 40,
+                  "Value": "Formation of a temporary “platelet plug",
+                  "FindingId": 6
+                },
+                {
+                  "Id": 41,
+                  "Value": "Activation of the coagulation cascade",
+                  "FindingId": 6
+                },
+                {
+                  "Id": 42,
+                  "Value": "Formation of “fibrin plug” or the final clot",
+                  "FindingId": 6
+                }
+              ]
+            },
+            {
+              "FieldId": 20,
+              "Id": 20,
+              "FieldName": "Thrombus Time",
+              "FieldType": "Time",
+              "FormId": 6,
+              "Label": "Thrombus Time",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 21,
+              "Id": 21,
+              "FieldName": "Thrombus Date",
+              "FieldType": "Date",
+              "FormId": 6,
+              "Label": "Thrombus Date",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "FormId": 7,
+          "FormName": "LV Morphology/Other",
+          "FormHeading": "LV Morphology/Other",
+          "Fields": [
+            {
+              "FieldId": 22,
+              "Id": 22,
+              "FieldName": "Internal Dimension",
+              "FieldType": "DropDown",
+              "FormId": 7,
+              "Label": "Internal Dimension",
+              "PostFix": "%",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 43,
+                  "Value": "42-59",
+                  "FindingId": 7
+                },
+                {
+                  "Id": 44,
+                  "Value": "39-53",
+                  "FindingId": 7
+                },
+                {
+                  "Id": 45,
+                  "Value": "60-63",
+                  "FindingId": 7
+                },
+                {
+                  "Id": 46,
+                  "Value": "54-57",
+                  "FindingId": 7
+                },
+                {
+                  "Id": 47,
+                  "Value": ">= 69",
+                  "FindingId": 7
+                },
+                {
+                  "Id": 48,
+                  "Value": ">= 62",
+                  "FindingId": 7
+                }
+              ]
+            },
+            {
+              "FieldId": 23,
+              "Id": 23,
+              "FieldName": "Cardiomyopathy",
+              "FieldType": "DropDown",
+              "FormId": 7,
+              "Label": "Cardiomyopathy",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 49,
+                  "Value": "A Test",
+                  "FindingId": 8
+                },
+                {
+                  "Id": 50,
+                  "Value": "B Test",
+                  "FindingId": 3
+                },
+                {
+                  "Id": 51,
+                  "Value": "C Test",
+                  "FindingId": 6
+                },
+                {
+                  "Id": 52,
+                  "Value": "D Test",
+                  "FindingId": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

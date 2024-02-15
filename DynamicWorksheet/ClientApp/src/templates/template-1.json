@@ -1,0 +1,558 @@
+{
+  "TemplateId": 1,
+  "TemplateName": "Template_1",
+  "Tabs": [
+    {
+      "TabId": 1,
+      "TabName": "Worksheet",
+      "FormData": [
+        {
+          "FormId": 1,
+          "FormName": "LV EF",
+          "FormHeading": "LV EF",
+          "Fields": [
+            {
+              "FieldId": 1,
+              "Id": 1,
+              "FieldName": "LVEDV (BIPLANE)",
+              "FieldType": "Text",
+              "FormId": 1,
+              "Label": "LVEDV (BIPLANE)",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 2,
+              "Id": 2,
+              "FieldName": "LVSV",
+              "FieldType": "Checkbox",
+              "FormId": 1,
+              "Label": "LVSV",
+              "Placeholder": "Tick the box",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 1,
+                  "Value": "true",
+                  "FindingId": 17
+                }
+              ]
+            },
+            {
+              "FieldId": 3,
+              "Id": 3,
+              "FieldName": "LVEDV",
+              "FieldType": "Number",
+              "FormId": 1,
+              "Label": "LVEDV",
+              "PostFix": "ml",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 4,
+              "Id": 4,
+              "FieldName": "EF (Teichholz)",
+              "FieldType": "Number",
+              "FormId": 1,
+              "Label": "EF (Teichholz)",
+              "PostFix": "ml",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 5,
+              "Id": 5,
+              "FieldName": "LVSV / BSA",
+              "FieldType": "Number",
+              "FormId": 1,
+              "Label": "LVSV / BSA",
+              "PostFix": "ml",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "FormId": 2,
+          "FormName": "LV Shape",
+          "FormHeading": "LV Shape",
+          "Fields": [
+            {
+              "FieldId": 6,
+              "Id": 6,
+              "FieldName": "LV Shape",
+              "FieldType": "DropDown",
+              "FormId": 2,
+              "Label": "LV Shape",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 2,
+                  "Value": "Normal",
+                  "FindingId": 16
+                },
+                {
+                  "Id": 3,
+                  "Value": "Cone",
+                  "FindingId": 16
+                },
+                {
+                  "Id": 4,
+                  "Value": "Sphere",
+                  "FindingId": 16
+                },
+                {
+                  "Id": 5,
+                  "Value": "Cylindrical",
+                  "FindingId": 16
+                },
+                {
+                  "Id": 6,
+                  "Value": "Truncated Ellipsoid",
+                  "FindingId": 16
+                }
+              ]
+            },
+            {
+              "FieldId": 7,
+              "Id": 7,
+              "FieldName": "LV Shape Size",
+              "FieldType": "DropDown",
+              "FormId": 2,
+              "Label": "LV Shape Size",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 7,
+                  "Value": "4,2-5,8",
+                  "FindingId": 13
+                },
+                {
+                  "Id": 8,
+                  "Value": "5,9 - 6,3",
+                  "FindingId": 13
+                },
+                {
+                  "Id": 9,
+                  "Value": "6,4 - 6,8",
+                  "FindingId": 13
+                },
+                {
+                  "Id": 10,
+                  "Value": ">6,8",
+                  "FindingId": 13
+                }
+              ]
+            },
+            {
+              "FieldId": 8,
+              "Id": 8,
+              "FieldName": "LV Shape Location",
+              "FieldType": "DropDown",
+              "FormId": 2,
+              "Label": "LV Shape Location",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 11,
+                  "Value": "Near to RV",
+                  "FindingId": 2
+                },
+                {
+                  "Id": 12,
+                  "Value": "Below the left atrium",
+                  "FindingId": 2
+                },
+                {
+                  "Id": 13,
+                  "Value": "Posterior to the right ventricle",
+                  "FindingId": 2
+                },
+                {
+                  "Id": 14,
+                  "Value": "Tp bottom left portion of the heart",
+                  "FindingId": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "FormId": 3,
+          "FormName": "Strain",
+          "FormHeading": "Strain",
+          "Fields": [
+            {
+              "FieldId": 9,
+              "Id": 9,
+              "FieldName": "GLS",
+              "FieldType": "Number",
+              "FormId": 3,
+              "Label": "GLS",
+              "PostFix": "ml/m²",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 10,
+              "Id": 10,
+              "FieldName": "GCS",
+              "FieldType": "Number",
+              "FormId": 3,
+              "Label": "GCS",
+              "PostFix": "ml/m²",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 11,
+              "Id": 11,
+              "FieldName": "GRS",
+              "FieldType": "Number",
+              "FormId": 3,
+              "Label": "GRS",
+              "PostFix": "ml/m²",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TabId": 2,
+      "TabName": "Tab 2",
+      "FormData": [
+        {
+          "FormId": 4,
+          "FormName": "LV Function",
+          "FormHeading": "LV Function",
+          "Fields": [
+            {
+              "FieldId": 12,
+              "Id": 12,
+              "FieldName": "Global Wall Motion",
+              "FieldType": "DropDown",
+              "FormId": 4,
+              "Label": "Global Wall Motion",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 15,
+                  "Value": "Normal",
+                  "FindingId": 3
+                },
+                {
+                  "Id": 16,
+                  "Value": "Cone",
+                  "FindingId": 3
+                },
+                {
+                  "Id": 17,
+                  "Value": "Shpere",
+                  "FindingId": 3
+                },
+                {
+                  "Id": 18,
+                  "Value": "Cylindircal",
+                  "FindingId": 3
+                },
+                {
+                  "Id": 19,
+                  "Value": "Truncated Ellipsoid",
+                  "FindingId": 3
+                }
+              ]
+            },
+            {
+              "FieldId": 13,
+              "Id": 13,
+              "FieldName": "Visual EF",
+              "FieldType": "DropDown",
+              "FormId": 4,
+              "Label": "Visual EF",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 20,
+                  "Value": "Normal",
+                  "FindingId": 4
+                },
+                {
+                  "Id": 21,
+                  "Value": "Abnormal",
+                  "FindingId": 4
+                },
+                {
+                  "Id": 22,
+                  "Value": "Slightly Abnormal",
+                  "FindingId": 4
+                },
+                {
+                  "Id": 23,
+                  "Value": "Severly Abnormal",
+                  "FindingId": 4
+                }
+              ]
+            },
+            {
+              "FieldId": 14,
+              "Id": 14,
+              "FieldName": "Setup Wall Motion",
+              "FieldType": "DropDown",
+              "FormId": 4,
+              "Label": "Setup Wall Motion",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 24,
+                  "Value": "Normal",
+                  "FindingId": 5
+                },
+                {
+                  "Id": 25,
+                  "Value": "Abnormal",
+                  "FindingId": 5
+                },
+                {
+                  "Id": 26,
+                  "Value": "Slightly Abnormal",
+                  "FindingId": 5
+                },
+                {
+                  "Id": 27,
+                  "Value": "Severly Abnormal",
+                  "FindingId": 5
+                }
+              ]
+            },
+            {
+              "FieldId": 15,
+              "Id": 15,
+              "FieldName": "Diastolic Filling/Dysfunction",
+              "FieldType": "DropDown",
+              "FormId": 4,
+              "Label": "Diastolic Filling/Dysfunction",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 28,
+                  "Value": "Normal",
+                  "FindingId": 5
+                },
+                {
+                  "Id": 29,
+                  "Value": "Abnormal",
+                  "FindingId": 5
+                },
+                {
+                  "Id": 30,
+                  "Value": "Slightly Abnormal",
+                  "FindingId": 5
+                },
+                {
+                  "Id": 31,
+                  "Value": "Severly Abnormal",
+                  "FindingId": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "FormId": 5,
+          "FormName": "VSD Structural Details",
+          "FormHeading": "VSD Structural Details",
+          "Fields": [
+            {
+              "FieldId": 16,
+              "Id": 16,
+              "FieldName": "VSD Location",
+              "FieldType": "DropDown",
+              "FormId": 5,
+              "Label": "VSD Location",
+              "Placeholder": "Select the value from Dropbox",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 32,
+                  "Value": "Normal",
+                  "FindingId": 3
+                },
+                {
+                  "Id": 33,
+                  "Value": "Cone",
+                  "FindingId": 3
+                },
+                {
+                  "Id": 34,
+                  "Value": "Shpere",
+                  "FindingId": 3
+                },
+                {
+                  "Id": 35,
+                  "Value": "Cylindircal",
+                  "FindingId": 3
+                },
+                {
+                  "Id": 36,
+                  "Value": "Truncated Ellipsoid",
+                  "FindingId": 3
+                }
+              ]
+            },
+            {
+              "FieldId": 17,
+              "Id": 17,
+              "FieldName": "VSD Size",
+              "FieldType": "Time",
+              "FormId": 5,
+              "Label": "VSD Size",
+              "Placeholder": "Enter the record",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ]
+            },
+            {
+              "FieldId": 18,
+              "Id": 18,
+              "FieldName": "VSD Shunt",
+              "FieldType": "Radio",
+              "FormId": 5,
+              "Label": "VSD Shunt",
+              "PostFix": "mm",
+              "Placeholder": "Choose one option",
+              "Validations": [
+                {
+                  "name": "Required",
+                  "Value": null,
+                  "Message": "Field is required"
+                }
+              ],
+              "Options": [
+                {
+                  "Id": 37,
+                  "Value": "RV",
+                  "FindingId": 1
+                },
+                {
+                  "Id": 38,
+                  "Value": "RV Normal",
+                  "FindingId": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

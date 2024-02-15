@@ -1,0 +1,253 @@
+<div class="d-flex">
+  <div class="cust-container card left-section">
+    <div class="wrapper">
+      <div class="left">
+        <ul class="nav nav-tabs">
+          <li class="nav-item" *ngFor="let tab of TabData" style="z-index: 1;">
+            <a class="nav-link tab" [class]="{'active':activeTabIndex==tab.TabId}"
+              (click)="tabChange(tab.TabId)">{{tab.TabName}}</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="right">
+        <button class=" btn btn-primary" type="button" (click)="onMainFormSubmit()">Save</button>
+        <button class=" btn btn-primary" type="button" style=" margin-left: 6px;" (click)="resetForm()">Reset</button>
+        <button class=" btn btn-primary" type="button" style=" margin-left: 6px;" (click)="clearForm()">Clear</button>
+        <a class="btn btn-secondary" [routerLink]="['/']" style="color: white; margin-left: 6px; z-index: 1;">Back</a>
+
+
+      </div>
+    </div>
+    <hr>
+    <div class="body-container">
+      <div
+        *ngIf="templateData!=null && templateData!=undefined  && TabData!=null && TabData!=undefined && TabData.length>0">
+        <form [formGroup]="mainForm">
+          <div *ngFor="let tabGroup of TabData">
+            <div [formGroup]="getTabGroupAt(tabGroup.TabName)">
+              <div class="row"
+                *ngIf="mainForm.get(tabGroup.TabName)?.value !=null && mainForm.get(tabGroup.TabName) !=undefined ">
+
+                <div *ngFor="let formGroup of tabGroup.FormData" class="col">
+                  <div class="box-wrapper tab-content my-2"
+                    [ngClass]="{ 'cus-visible' : tabGroup.TabId === activeTabIndex}"
+                    [formGroup]="getFormGroupAt(formGroup.FormName, tabGroup.TabName)">
+                    <div class="form-nav">
+                      <p (click)="toggleform()"><i class="arrow-down"></i></p>
+                      <div class="center-heading">
+                        <p class="heading">{{formGroup.FormHeading}}</p>
+                      </div>
+                    </div>
+                    <div class="form-wrapper">
+                      <div id="form-body" class="form-body">
+                        <div class="template-container ">
+                          <!--Image preview-->
+
+                          <div
+                            *ngIf="formGroup.ImagePreview != null && formGroup.ImagePreview != undefined  && formGroup.ImagePreview.length>0  ">
+
+
+                            <div class="row my-2">
+                              <div class="col m-1" *ngFor="let images of formGroup.ImagePreview;"
+                                (click)="ToggleModel(images.ImageLink,images.Name)">
+
+                                <div class="card cust-card">
+                                  <img class="card-img-top cust-img-card" [src]="images.ImageLink" [alt]="images.Name">
+                                  <div class="card-body">
+                                    <p class="card-text">{{images.Name}}</p>
+                                  </div>
+                                </div>
+
+
+                              </div>
+                            </div>
+                          </div>
+                          <!--Image Preview End-->
+                          <div *ngFor="let formControl of formGroup.Fields">
+                            <!--//check and apply class-->
+                            <div [class]="{'dynamicField-background':showDynamicGrid[formControl.FieldId]}">
+                              <div class="fields-container">
+                                <label class="col-md-5 col-form-label text-md-right mx-3">{{formControl.Label}}   </label>
+
+                                <ng-container *ngIf="formControl.FieldType === 'Int' || formControl.FieldType === 'Decimal' || formControl.FieldType === 'Number';">
+                                  <input class="form-control" id="fieldInput" [formControlName]="formControl.FieldName +'_' +formControl.FieldId" type="number"
+                                         (change)="onInputChange(tabGroup.TabName,formGroup.FormName,formControl.FieldName +'_' +formControl.FieldId, $event.target, formControl)" />
+                                </ng-container>
+                                <ng-container *ngIf="formControl.FieldType === 'Text'; else dropdownCheckboxRadio">
+                                  <input class="form-control" id="fieldInput" [formControlName]="formControl.FieldName +'_' +formControl.FieldId" type="text"
+                                         (change)="onInputChange(tabGroup.TabName,formGroup.FormName,formControl.FieldName +'_' +formControl.FieldId, $event.target, formControl)" />
+                                </ng-container>
+                                <ng-template #dropdownCheckboxRadio>
+                                  <ng-container *ngIf="formControl.FieldType === 'DropDown'">
+                                    <div class="select-wrapper">
+                                      <select class="form-control" id="fieldInput" [formControlName]="formControl.FieldName +'_' +formControl.FieldId"
+                                              (change)="onInputChange(tabGroup.TabName,formGroup.FormName,formControl.FieldName +'_' +formControl.FieldId,$event.target, formControl)">
+                                        <option *ngFor="let option of formControl.Options" [value]="option.Id"
+                                                [attr.data-FieldOptionId]="option.FieldOptionId">
+                                          {{ option.Value  }}
+                                        </option>
+                                      </select>
+                                    </div>
+                                  </ng-container>
+                                  <ng-container *ngIf="formControl.FieldType === 'Checkbox'">
+                                    <div *ngFor="let option of formControl.Options">
+                                      <label>
+                                        <input type="checkbox" class="checkbox" id="fieldInput" [formControlName]="formControl.FieldName +'_' +formControl.FieldId"
+                                               (change)="onInputChange(tabGroup.TabName,formGroup.FormName,formControl.FieldName +'_' +formControl.FieldId,option.FieldOptionId, formControl)"
+                                               />
+                                      </label>
+                                    </div>
+
+                                  </ng-container>
+                                  <ng-container *ngIf="formControl.FieldType === 'Radio'">
+                                    <div *ngFor="let option of formControl.Options">
+                                      <label>
+                                        <input class="radio" type="radio" id="fieldInput" [value]="option.Id.toString()"
+                                               [formControlName]="formControl.FieldName +'_' +formControl.FieldId" value="option.Value"
+                                               (change)="onInputChange(tabGroup.TabName,formGroup.FormName,formControl.FieldName +'_' +formControl.FieldId, option.FieldOptionId, formControl)" />
+                                        {{ option.Value }}
+                                      </label>
+                                    </div>
+                                  </ng-container>
+                                  <ng-container *ngIf="formControl.FieldType === 'Date'">
+                                    <input class="form-control" id="fieldInput" [formControlName]="formControl.FieldName +'_' +formControl.FieldId" type="date" />
+                                  </ng-container>
+                                  <ng-container *ngIf="formControl.FieldType === 'Time'">
+                                    <input class="form-control" id="fieldInput" [formControlName]="formControl.FieldName +'_' +formControl.FieldId" type="time" />
+                                  </ng-container>
+                                </ng-template>
+                                &nbsp;
+                                <p>{{formControl.PostFix}}</p>
+                                &nbsp;
+                                <ng-container *ngIf="formControl.IsDynamic === true">
+                                  <button (click)="addField(tabGroup.TabName,formGroup.FormName,formControl.FieldName +'_' +formControl.FieldId,formControl, formControl.Options?.[0]?.FieldOptionId ?? null)"
+                                          class="btn btn-sm btn-primary" style="height: 28px;">
+                                    +
+                                  </button>
+                                </ng-container>
+                              </div>
+                              <ng-container  *ngIf="showDynamicGrid[formControl.FieldId]">
+                                <div class="fields-container"
+                                     *ngIf="formControl.IsDynamic === true && dynamicRows.length > 0">
+                                  <table class="table table-sm table-hover">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Sr No.</th>
+                                        <th scope="col">Value</th>
+                                        <th scope="col">Action</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <ng-container *ngFor="let dynamicRow of dynamicRows; index as fieldrowIndex">
+
+                                        <ng-container *ngFor="let dynamicField of dynamicRow.Values; index as i">
+                                          <tr *ngIf="dynamicRow.FieldId ==formControl.FieldId">
+                                            <td>{{ i+1}}</td>
+                                            <td width="70%">{{ dynamicField.TextValue }}</td>
+                                            <td ><img (click)="removeFieldItem(tabGroup.TabName,formGroup.FormName,formControl.FieldName +'_' +formControl.FieldId,dynamicRow,fieldrowIndex,i)" style="width: 14px; height: 14px; cursor:pointer" src="../../assets/trash-solid.svg" /> </td>
+                                          </tr>
+                                        </ng-container>
+
+                                      </ng-container>
+
+                                    </tbody>
+                                  </table>
+
+                                </div>
+                              </ng-container>
+                            </div>
+
+
+                          </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </form>
+      </div>
+      <div
+        *ngIf="templateData==null || templateData==undefined  || FormData==null || FormData==undefined || FormData.length==0"
+        style="display:contents;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="error-template">
+                <h1>
+                  Oops!
+                </h1>
+                <h2>
+                  Template Not Found
+                </h2>
+
+                <div class="error-actions">
+                  <a [routerLink]="['/']" class="btn btn-primary btn-lg">
+                    <span class="glyphicon glyphicon-home"></span>
+                    Take Me Home
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+
+  <div class="rgt-section card fix-on-top">
+
+    <div class="card-header">
+      <img (click)="toggleSortOrder()"
+        [src]="sortOrder === 'asc' ? '../../assets/down-long-solid.svg' : '../../assets/up-long-solid.svg'"
+        style="height: 13px; width: 13px; cursor: pointer;" />
+      <strong>&nbsp; Findings</strong>
+    </div>
+    <div class="scrolling-container" id="scrolling-container"
+      *ngIf="findingsArray && findingsArray.length > 0; else noFindings">
+      <div class="card-body-cust border" *ngFor="let findings of findingsArray">
+        <h5 class="card-title text-primary">{{ findings.findingTitle }}</h5>
+        <p *ngFor="let statement of findings.statements">{{ statement.description }}</p>
+      </div>
+    </div>
+    <div>
+      <ng-template #noFindings>
+        <p class="card-body-cust ">Please select a field to add values.</p>
+      </ng-template>
+    </div>
+  </div>
+
+
+  <!--Model PopUP-->
+
+  <div class="modal  fade show showModel" tabindex="-1" role="dialog" *ngIf="IsModelShow"
+    style="display: block; padding-right: 17px;">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">{{ImagePreviewTitle}}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="ToggleModel()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img [src]="ImagePreviewLink" class="imagePreview" height="400" width="400" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="modal-backdrop fade show" *ngIf="IsModelShow"></div>
+  </div>
+  <!--Model PopUP-->
